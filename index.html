@@ -49,7 +49,11 @@
 				</section>
 
 				<section>
-					<h2>What is your Quest?</h2>
+					<h2>Why should you code?</h2>
+					<p class="fragment">Cover more ground, faster</p>
+					<p class="fragment">Helps document reporting</p>
+					<p class="fragment">Makes analysis replicable</p>
+					<p class="fragment">Automation!</p>
 				</section>
 
 				<!-- Example of nested vertical slides -->
@@ -57,11 +61,11 @@
 					<section>
 						<h2>Today, we won't learn everything</h2>
 
-						<p class="fragment"><strike><a href="http://cli.learncodethehardway.org/book/">The Command Line</a></strike></p>
-						<p class="fragment"><strike><a href="http://www.tommeagher.com/blog/2013/02/learning-to-commit-to-version-control.html">Git</a> or Github</strike></p>
-						<p class="fragment"><strike><a href="https://pypi.python.org/pypi/pip">pip</a> or <a href="https://virtualenv.pypa.io/en/latest/">virtualenvs</a></strike></p>
-						<p class="fragment"><strike>Frameworks</strike></p>
-						<p class="fragment"><strike>News apps</strike></p>
+						<p><strike><a href="http://cli.learncodethehardway.org/book/">The Command Line</a></strike></p>
+						<p><strike><a href="http://www.tommeagher.com/blog/2013/02/learning-to-commit-to-version-control.html">Git</a> or Github</strike></p>
+						<p><strike><a href="https://pypi.python.org/pypi/pip">pip</a> or <a href="https://virtualenv.pypa.io/en/latest/">virtualenvs</a></strike></p>
+						<p><strike>Frameworks</strike></p>
+						<p><strike><a href="https://first-news-app.readthedocs.org/en/latest/">News apps</a></strike></p>
 					</section>
 
 					<section>
@@ -69,13 +73,14 @@
 
 						<p>This will not be nuanced, idiomatic Python.</p>
 						<p>Some programmers may be saddened by this code.</p>
-						<p>But you know what? If it works, and it works on deadline, that's what matters for us.</p>
+						<p>But you know what? If it works, and it works on deadline, that's what matters for us today.</p>
 
 					</section>
 
 					<section>
-						<h2>We want to learn<br /> how to think about problems<br />
-						And how to start learning to code.</h2>
+						<h2>The goal</h2> 
+						<p>To start thinking about<br /> how to break problems down<br />into the smallest tasks<br /> that can be programmed.<br />
+						</p>
 					</section>
 				</section>
 
@@ -119,14 +124,22 @@ ipython
 
 				<section>
 					<h2>Strings</h2>
-					<p>Strings are sequences of text characters wrapped in quotes.<br /><br /></p>
+					<p>Strings are ordered sequences of text characters wrapped in quotes.<br /><br /></p>
+					<pre><code>
+var1 = "This class is at IRE in Philadelphia."
+var2 = "&You!_123 Four"
 
-					<small><small>Follow along at home here.</small></small>
+</code>
+</pre>
+
+					<p><br /></p>
+					<small>Follow along at home <a href="https://github.com/tommeagher/pythonIRE15/blob/master/scripts/the_basics.py">here</a>.<br /><small>If you want to cheat, the answers are <a href="https://github.com/tommeagher/pythonIRE15/blob/master/scripts/completed/the_basics_complete.py">here</a>.</small></small>
 				</section>
 
 				<section>
 					<h2>Integers and Floats</h2>
-					<p>These are numbers that you can do math on.<br />
+					<p>Numbers that you can do math on.<br />
+					<br />
 					Integers are whole numbers.<br />
 					Floats are decimals.<br />
 					</p>
@@ -134,26 +147,54 @@ ipython
 
 				<section>
 					<h2>Lists</h2>
-					A list
+					An ordered collection of objects, wrapped in brackets. 
+
+					<pre><code>
+my_list = [1, 2, "Liberty Bell"]
+
+</code></pre>
 
 				</section>
 
 				<section>
 					<h2>Dicts</h2>
-					A dictionary
+					A collection of named keys and their associated values, wrapped in curly brackets.
+					<pre><code>
+my_dict = {'Fruit': 'Orange', 'Weight': 10}
+
+</code></pre>
 
 				</section>
 
 				<section>
 					<h2>Conditionals</h2>
-					Conditionals
+					<p>Logic that can trigger other operations,<br /> similar to Excel's if function. </p>
+					
+					In Excel:<br />
+					<img src="imgs/if_function.png">
+					<br />
+					In Python:
+					<pre><code>
+x = 1
+if x > 1:
+    print "Win"
+else:
+    print "Lose"
 
-					"If/Else"
+</code></pre>
+
+				</section>
+
+				<section>
+				<h2>Intermission</h2>
+				<p>For more practice with the basics,<br /> 
+				at home, try <a href="https://github.com/ireapps/pycar/tree/master/project1">this tutorial from PyCAR</a>,<br />or <a href="https://github.com/ireapps/pycar/blob/master/takehome/PyCAR_basics.ipynb">this one</a>.</p>
 
 				</section>
 
 				<section>
 				<h2> Part Deux</h2>
+				<h3>The Problem</h3>	
 				</section>
 
 			    <section>
@@ -163,7 +204,7 @@ ipython
 				</section>
 				
 				<section>
-					<h2>...to this.</h2>
+					<h2>...to this?</h2>
 					<img src="imgs/spreadsheet.png">
 				</section>
 
@@ -198,9 +239,11 @@ ipython
 				<section>
 				<h2>Keep learning</h2>
 				<p><a href="https://groups.google.com/forum/#!forum/pythonjournos">Python Journos</a></p>
-				<p>NICAR-L</p>
+				<p><a href="https://github.com/ireapps/pycar/tree/master/takehome">More resources for learning Python</a>
+				<p><a href="https://www.ire.org/resource-center/listservs/subscribe-nicar-l/">NICAR-L</a></p>
+				<p><a href="https://source.opennews.org/en-US/code/">Source</a></p>
 				<p>Github</p>
-				<p>Stack Overflow</p>
+				<p>StackOverflow</p>
 				<p>Google</p>
 				</section>
 
